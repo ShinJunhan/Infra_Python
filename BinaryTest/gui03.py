@@ -21,7 +21,7 @@ def clicked():
     input_value=entry.get().strip() # strip() >> 좌우 공백제거
     
     # 빈 값일 때, 안내 문구 확인
-    if not input_value :
+    if not input_value:
         messagebox.showwarning("Warnning!", "값을 입력하세요!")
         return   # 함수를 호출한 곳으로 실행의 흐름을 돌려준다(함수는 여기서 종료된다)
 
@@ -32,7 +32,7 @@ def clicked():
             return
         
         # 8자리 인지 확인
-        if (len(input_value>8)):
+        if len(input_value) > 8:
             result_lable.config(text="8자리까지만 입력 가능합니다", fg="red")
             return
 
